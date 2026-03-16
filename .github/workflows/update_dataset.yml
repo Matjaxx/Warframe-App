@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas requests openpyxl
+          pip install pandas requests openpyxl warframe-market.py
 
       - name: Run dataset builder
         run: |
