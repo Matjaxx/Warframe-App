@@ -1,0 +1,4 @@
+warframe-market.py
+pandas
+requests
+openpyxl
