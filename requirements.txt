@@ -1,4 +1,5 @@
-pandas
-requests
-openpyxl
-streamlit
+streamlit==1.50.0
+altair<6
+pandas==3.0.1
+requests==2.32.5
+openpyxl==3.1.5
