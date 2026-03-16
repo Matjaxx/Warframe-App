@@ -50,7 +50,7 @@ def average_last_10_closed_sales(slug: str) -> float | None:
         "Platform": "pc",
         "Language": "en",
         "Accept": "application/json",
-        "User-Agent": "warframe-relic-script/1.0",
+        "User-Agent": "warframe-relic-streamlit/1.0",
     }
 
     try:

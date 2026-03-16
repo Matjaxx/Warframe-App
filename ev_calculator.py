@@ -1,6 +1,3 @@
-from reward_parser import reward_name
-
-
 INTACT_PROBAS = {
     "bronze": 0.2533,
     "argent": 0.11,

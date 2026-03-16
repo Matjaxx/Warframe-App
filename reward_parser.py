@@ -18,7 +18,6 @@ def classify_reward_by_chance(reward: dict) -> str | None:
     except (TypeError, ValueError):
         return None
 
-    # valeurs exactes de relic classique
     if chance_value == 25.33:
         return "bronze"
     if chance_value == 11:
@@ -26,7 +25,6 @@ def classify_reward_by_chance(reward: dict) -> str | None:
     if chance_value == 2:
         return "gold"
 
-    # fallback
     if chance_value >= 20:
         return "bronze"
     if chance_value >= 10:
