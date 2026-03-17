@@ -54,6 +54,9 @@ def fetch_selected_relics_from_api_sync(selected_relic_names: list[str]) -> pd.D
             a1, a2 = argent
             g1 = gold[0]
 
+            relic_slug = relic.get("warframeMarket", {}).get("urlName")
+            relic_price = get_price(relic_slug)
+
             price_b1 = get_price(reward_slug(b1))
             price_b2 = get_price(reward_slug(b2))
             price_b3 = get_price(reward_slug(b3))
@@ -64,18 +67,26 @@ def fetch_selected_relics_from_api_sync(selected_relic_names: list[str]) -> pd.D
             row = RelicRow(
                 relic_name=relic_name,
                 tier=extract_tier(relic_name),
+                relic_price=relic_price,
+
                 item_bronze1=reward_name(b1),
                 price_bronze1=price_b1,
+
                 item_bronze2=reward_name(b2),
                 price_bronze2=price_b2,
+
                 item_bronze3=reward_name(b3),
                 price_bronze3=price_b3,
+
                 item_argent1=reward_name(a1),
                 price_argent1=price_a1,
+
                 item_argent2=reward_name(a2),
                 price_argent2=price_a2,
+
                 item_gold1=reward_name(g1),
                 price_gold1=price_g1,
+
                 ev_intact=compute_ev_intact(
                     bronze_prices=[price_b1, price_b2, price_b3],
                     argent_prices=[price_a1, price_a2],

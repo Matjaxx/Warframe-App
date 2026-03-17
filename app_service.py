@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 import math
+from pathlib import Path
+
 import pandas as pd
 
-DATA_PATH = "data/warframe_relic_rewards.csv"
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR / "data" / "warframe_relic_rewards.csv"
 
 
 def _clean_value(value):
@@ -20,6 +24,9 @@ def _clean_value(value):
 
 
 def load_relic_dataset() -> pd.DataFrame:
+    if not DATA_PATH.exists():
+        raise FileNotFoundError(f"Dataset not found: {DATA_PATH}")
+
     return pd.read_csv(DATA_PATH)
 
 
@@ -44,6 +51,7 @@ def fetch_one_relic_details_sync(selected_relic_name: str) -> dict:
     return {
         "relic_name": _clean_value(row["relic_name"]),
         "tier": _clean_value(row.get("tier")),
+        "relic_price": _clean_value(row.get("relic_price")),
         "rewards": [
             (_clean_value(row.get("item_bronze1")), _clean_value(row.get("price_bronze1")), "bronze"),
             (_clean_value(row.get("item_bronze2")), _clean_value(row.get("price_bronze2")), "bronze"),

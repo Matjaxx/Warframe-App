@@ -5,6 +5,7 @@ from dataclasses import dataclass
 class RelicRow:
     relic_name: str
     tier: str | None
+    relic_price: float | None
 
     item_bronze1: str | None
     price_bronze1: float | None

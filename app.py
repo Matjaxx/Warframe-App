@@ -10,15 +10,9 @@ from vision_calculator import (
 
 st.set_page_config(page_title="Warframe Relic App", layout="wide")
 
-# =========================
-# LOAD DATASET
-# =========================
 all_df = fetch_selected_relics_sync([])
 all_relics = sorted(all_df["relic_name"].dropna().unique().tolist())
 
-# =========================
-# NAV STATE
-# =========================
 if "page" not in st.session_state:
     st.session_state.page = "Relic Browser"
 
@@ -27,9 +21,6 @@ def go_to(page_name: str) -> None:
     st.session_state.page = page_name
 
 
-# =========================
-# SIDEBAR NAVBAR
-# =========================
 st.sidebar.title("Warframe Relic App")
 st.sidebar.caption("Navigation")
 
@@ -52,9 +43,6 @@ st.sidebar.write(f"Page active : **{st.session_state.page}**")
 
 page = st.session_state.page
 
-# =========================
-# RELIC BROWSER
-# =========================
 if page == "Relic Browser":
     st.title("📊 Relic Browser")
     st.caption("Analyse multi-relics avec EV et prix")
@@ -70,8 +58,8 @@ if page == "Relic Browser":
     with col1:
         sort_by = st.selectbox(
             "Trier par",
-            options=["relic_name", "ev_intact", "ev_radiant"],
-            index=1,
+            options=["relic_name", "tier", "relic_price", "ev_intact", "ev_radiant"],
+            index=3,
         )
 
     with col2:
@@ -81,7 +69,30 @@ if page == "Relic Browser":
     df = fetch_selected_relics_sync(relics_to_fetch)
 
     if not df.empty:
+        preferred_columns = [
+            "relic_name",
+            "tier",
+            "relic_price",
+            "item_bronze1",
+            "price_bronze1",
+            "item_bronze2",
+            "price_bronze2",
+            "item_bronze3",
+            "price_bronze3",
+            "item_argent1",
+            "price_argent1",
+            "item_argent2",
+            "price_argent2",
+            "item_gold1",
+            "price_gold1",
+            "ev_intact",
+            "ev_radiant",
+        ]
+
+        existing_columns = [col for col in preferred_columns if col in df.columns]
+        df = df[existing_columns]
         df = df.sort_values(by=sort_by, ascending=ascending, na_position="last")
+
         st.dataframe(df, use_container_width=True, hide_index=True)
 
         csv = df.to_csv(index=False).encode("utf-8")
@@ -91,12 +102,15 @@ if page == "Relic Browser":
             "relics_filtered.csv",
             use_container_width=True,
         )
+
+        if selected_relics:
+            wtb_text = "WTB relic " + " ".join(f"[{relic}]" for relic in selected_relics)
+            st.subheader("Texte copy-paste")
+            st.code(wtb_text, language=None)
+
     else:
         st.info("Aucune donnée.")
 
-# =========================
-# RELIC VISION
-# =========================
 elif page == "Relic Vision":
     st.title("🔮 Relic Vision")
     st.caption("Calcul de profit avec squad")
@@ -131,11 +145,12 @@ elif page == "Relic Vision":
         shared_cost = effective_buy_price(buy_price, players)
         profit = compute_profit(expected_value, buy_price, players)
 
-        m1, m2, m3, m4 = st.columns(4)
+        m1, m2, m3, m4, m5 = st.columns(5)
         m1.metric("Relic", details["relic_name"])
-        m2.metric("EV équipe", expected_value)
-        m3.metric("Coût / joueur", shared_cost)
-        m4.metric("Profit", profit)
+        m2.metric("Prix relic", details.get("relic_price"))
+        m3.metric("EV équipe", expected_value)
+        m4.metric("Coût / joueur", shared_cost)
+        m5.metric("Profit", profit)
 
         st.subheader("Rewards")
 
