@@ -1,31 +1,50 @@
+from __future__ import annotations
+
 import requests
 
-WM_STATS_URL = "https://api.warframe.market/v1/items/{}/statistics"
+
+HEADERS = {
+    "Platform": "pc",
+    "Language": "en",
+    "Accept": "application/json",
+    "User-Agent": "warframe-relic-builder/1.0",
+}
+
+ORDERS_URL = "https://api.warframe.market/v1/items/{}/orders"
+STATS_URL = "https://api.warframe.market/v1/items/{}/statistics"
 
 
-def get_order_status(order) -> str | None:
-    user = getattr(order, "user", None)
-    if user is None:
+def best_sell_price_from_api(slug: str) -> float | None:
+    try:
+        response = requests.get(ORDERS_URL.format(slug), headers=HEADERS, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+    except Exception:
         return None
-    return getattr(user, "status", None)
 
-
-def best_sell_price(top_orders) -> float | None:
-    sell_orders = getattr(top_orders.data, "sell", []) or []
-    if not sell_orders:
+    orders = data.get("payload", {}).get("orders", [])
+    if not orders:
         return None
 
     ingame_prices: list[float] = []
     online_prices: list[float] = []
     all_prices: list[float] = []
 
-    for order in sell_orders:
+    for order in orders:
+        if order.get("order_type") != "sell":
+            continue
+
+        if order.get("visible") is False:
+            continue
+
+        user = order.get("user", {}) or {}
+        status = user.get("status")
+
         try:
-            price = float(order.platinum)
+            price = float(order.get("platinum"))
         except (TypeError, ValueError):
             continue
 
-        status = get_order_status(order)
         all_prices.append(price)
 
         if status == "ingame":
@@ -46,15 +65,8 @@ def best_sell_price(top_orders) -> float | None:
 
 
 def average_last_10_closed_sales(slug: str) -> float | None:
-    headers = {
-        "Platform": "pc",
-        "Language": "en",
-        "Accept": "application/json",
-        "User-Agent": "warframe-relic-streamlit/1.0",
-    }
-
     try:
-        response = requests.get(WM_STATS_URL.format(slug), headers=headers, timeout=30)
+        response = requests.get(STATS_URL.format(slug), headers=HEADERS, timeout=30)
         response.raise_for_status()
         data = response.json()
     except Exception:
