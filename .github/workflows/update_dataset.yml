@@ -28,15 +28,26 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install pandas requests openpyxl
+          npm ci
 
       - name: Sync with remote main
         run: |
           git checkout main
           git pull --rebase origin main
+
+      - name: Generate fresh relic source
+        run: |
+          npm run build:relic-source
 
       - name: Run dataset builder
         run: |

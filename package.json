@@ -1,0 +1,10 @@
+{
+  "name": "warframe-app",
+  "private": true,
+  "scripts": {
+    "build:relic-source": "node scripts/generate_relic_source.mjs"
+  },
+  "dependencies": {
+    "@wfcd/relics": "2.0.29"
+  }
+}

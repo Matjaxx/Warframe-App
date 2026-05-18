@@ -1,4 +1,13 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
 import requests
+
+
+BASE_DIR = Path(__file__).resolve().parent
+LOCAL_RELIC_DATA_PATH = BASE_DIR / "data" / "Relics.json"
 
 RELIC_DATA_URL = (
     "https://raw.githubusercontent.com/WFCD/warframe-relic-data/"
@@ -7,9 +16,13 @@ RELIC_DATA_URL = (
 
 
 def load_relic_data() -> list[dict]:
-    response = requests.get(RELIC_DATA_URL, timeout=30)
-    response.raise_for_status()
-    data = response.json()
+    if LOCAL_RELIC_DATA_PATH.exists():
+        with LOCAL_RELIC_DATA_PATH.open(encoding="utf-8") as file:
+            data = json.load(file)
+    else:
+        response = requests.get(RELIC_DATA_URL, timeout=30)
+        response.raise_for_status()
+        data = response.json()
 
     return [relic for relic in data if not relic["name"].startswith("Requiem")]
 
