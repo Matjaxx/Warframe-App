@@ -65,13 +65,18 @@ jobs:
 
           for i in 1 2 3 4 5; do
             echo "Push attempt $i"
-            git fetch origin main
-            git rebase origin/main
             if git push origin HEAD:main; then
               echo "Push succeeded"
               exit 0
             fi
-            echo "Push failed, retrying in 5s..."
+
+            echo "Push failed, rebasing onto origin/main..."
+            if ! git pull --rebase --autostash origin main; then
+              echo "Rebase failed"
+              exit 1
+            fi
+
+            echo "Retrying in 5s..."
             sleep 5
           done
 
