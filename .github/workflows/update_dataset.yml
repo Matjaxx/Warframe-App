@@ -40,11 +40,6 @@ jobs:
           python -m pip install pandas requests openpyxl
           npm ci
 
-      - name: Sync with remote main
-        run: |
-          git checkout main
-          git pull --rebase origin main
-
       - name: Generate fresh relic source
         run: |
           npm run build:relic-source
