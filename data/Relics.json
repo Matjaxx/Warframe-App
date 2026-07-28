@@ -79829,6 +79829,92 @@
                 }
             }
         ],
+        "locations": [],
+        "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionVorunaPrimeDBronze",
+        "vaultInfo": {
+            "vaulted": true
+        },
+        "warframeMarket": {
+            "id": "69d6782ab3984cc97e241760",
+            "urlName": "neo_v11_relic"
+        }
+    },
+    {
+        "name": "Neo V12",
+        "rewards": [
+            {
+                "rarity": "Rare",
+                "chance": 2,
+                "item": {
+                    "name": "Voruna Prime Systems Blueprint",
+                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
+                    "warframeMarket": {
+                        "id": "69d67675b3984cc97e241750",
+                        "urlName": "voruna_prime_systems_blueprint"
+                    }
+                }
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 11,
+                "item": {
+                    "name": "Xaku Prime Chassis Blueprint",
+                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
+                    "warframeMarket": {
+                        "id": "673516acdb3ac2cfade14a73",
+                        "urlName": "xaku_prime_chassis_blueprint"
+                    }
+                }
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 11,
+                "item": {
+                    "name": "Quassus Prime Blueprint",
+                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
+                    "warframeMarket": {
+                        "id": "673516dedb3ac2cfade14a7d",
+                        "urlName": "quassus_prime_blueprint"
+                    }
+                }
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 25.33,
+                "item": {
+                    "name": "Akbronco Prime Blueprint",
+                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
+                    "warframeMarket": {
+                        "id": "54a73e65e779893a797fff22",
+                        "urlName": "akbronco_prime_blueprint"
+                    }
+                }
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 25.33,
+                "item": {
+                    "name": "Paris Prime Blueprint",
+                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
+                    "warframeMarket": {
+                        "id": "54a73e65e779893a797fff55",
+                        "urlName": "paris_prime_blueprint"
+                    }
+                }
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 25.33,
+                "item": {
+                    "name": "Yareli Prime Chassis Blueprint",
+                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
+                    "warframeMarket": {
+                        "id": "682dfa9835715d4f3e9c64e9",
+                        "urlName": "yareli_prime_chassis_blueprint"
+                    }
+                }
+            }
+        ],
         "locations": [
             {
                 "rarity": "Legendary",
@@ -80631,95 +80717,9 @@
                 "location": "Höllvania/Solstice Square (Defense), Rotation B"
             }
         ],
-        "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionVorunaPrimeDBronze",
-        "vaultInfo": {
-            "vaulted": false
-        },
-        "warframeMarket": {
-            "id": "69d6782ab3984cc97e241760",
-            "urlName": "neo_v11_relic"
-        }
-    },
-    {
-        "name": "Neo V12",
-        "rewards": [
-            {
-                "rarity": "Rare",
-                "chance": 2,
-                "item": {
-                    "name": "Voruna Prime Systems Blueprint",
-                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
-                    "warframeMarket": {
-                        "id": "69d67675b3984cc97e241750",
-                        "urlName": "voruna_prime_systems_blueprint"
-                    }
-                }
-            },
-            {
-                "rarity": "Uncommon",
-                "chance": 11,
-                "item": {
-                    "name": "Xaku Prime Chassis Blueprint",
-                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
-                    "warframeMarket": {
-                        "id": "673516acdb3ac2cfade14a73",
-                        "urlName": "xaku_prime_chassis_blueprint"
-                    }
-                }
-            },
-            {
-                "rarity": "Uncommon",
-                "chance": 11,
-                "item": {
-                    "name": "Quassus Prime Blueprint",
-                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
-                    "warframeMarket": {
-                        "id": "673516dedb3ac2cfade14a7d",
-                        "urlName": "quassus_prime_blueprint"
-                    }
-                }
-            },
-            {
-                "rarity": "Uncommon",
-                "chance": 25.33,
-                "item": {
-                    "name": "Akbronco Prime Blueprint",
-                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
-                    "warframeMarket": {
-                        "id": "54a73e65e779893a797fff22",
-                        "urlName": "akbronco_prime_blueprint"
-                    }
-                }
-            },
-            {
-                "rarity": "Uncommon",
-                "chance": 25.33,
-                "item": {
-                    "name": "Paris Prime Blueprint",
-                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
-                    "warframeMarket": {
-                        "id": "54a73e65e779893a797fff55",
-                        "urlName": "paris_prime_blueprint"
-                    }
-                }
-            },
-            {
-                "rarity": "Uncommon",
-                "chance": 25.33,
-                "item": {
-                    "name": "Yareli Prime Chassis Blueprint",
-                    "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
-                    "warframeMarket": {
-                        "id": "682dfa9835715d4f3e9c64e9",
-                        "urlName": "yareli_prime_chassis_blueprint"
-                    }
-                }
-            }
-        ],
-        "locations": [],
         "uniqueName": "/Lotus/Types/Game/Projections/T3VoidProjectionStyanaxPrimeFBronze",
         "vaultInfo": {
-            "vaulted": true
+            "vaulted": false
         },
         "warframeMarket": {
             "id": "6a34bb30875fcabc85ef5bdf",
