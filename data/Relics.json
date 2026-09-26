@@ -73040,8 +73040,12 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Gyre Systems Blueprint",
-                    "uniqueName": ""
+                    "name": "Gyre Prime Systems Blueprint",
+                    "uniqueName": "",
+                    "warframeMarket": {
+                        "id": "6939aa455d9ebda239125d29",
+                        "urlName": "gyre_prime_systems_blueprint"
+                    }
                 }
             }
         ],
