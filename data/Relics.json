@@ -1026,7 +1026,7 @@
                     "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionGyrePrimeABronze",
                     "warframeMarket": {
                         "id": "682dfb8835715d4f3e9c64f6",
-                        "urlName": "kompressa_prime_reciever"
+                        "urlName": "kompressa_prime_receiver"
                     }
                 }
             },
@@ -1643,7 +1643,7 @@
                     "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionStyanaxPrimeCBronze",
                     "warframeMarket": {
                         "id": "682dfb8835715d4f3e9c64f6",
-                        "urlName": "kompressa_prime_reciever"
+                        "urlName": "kompressa_prime_receiver"
                     }
                 }
             },
@@ -10442,7 +10442,7 @@
                     "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionYareliPrimeBBronze",
                     "warframeMarket": {
                         "id": "682dfb8835715d4f3e9c64f6",
-                        "urlName": "kompressa_prime_reciever"
+                        "urlName": "kompressa_prime_receiver"
                     }
                 }
             },
@@ -17603,7 +17603,7 @@
                     "uniqueName": "/Lotus/Types/Game/Projections/T4VoidProjectionVorunaPrimeEBronze",
                     "warframeMarket": {
                         "id": "682dfb8835715d4f3e9c64f6",
-                        "urlName": "kompressa_prime_reciever"
+                        "urlName": "kompressa_prime_receiver"
                     }
                 }
             },
@@ -19254,7 +19254,7 @@
         },
         "warframeMarket": {
             "id": "68add9961027572e028db6c9",
-            "urlName": "axi_o7_relic"
+            "urlName": "axi_y2_relic"
         }
     },
     {
