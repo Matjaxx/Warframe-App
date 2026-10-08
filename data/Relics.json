@@ -2878,11 +2878,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Epitaph Prime Barrel",
+                    "name": "Nami Skyla Prime Handle",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c60c2766bbb2aedca695a5",
-                        "urlName": "epitaph_prime_barrel"
+                        "id": "59a5cd4d5cd9938cfede7042",
+                        "urlName": "nami_skyla_prime_handle"
                     }
                 }
             },
@@ -2890,11 +2890,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Sevagoth Prime Systems Blueprint",
+                    "name": "Burston Prime Barrel",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c6080366bbb2aedca6957f",
-                        "urlName": "sevagoth_prime_systems_blueprint"
+                        "id": "54a73e65e779893a797fff39",
+                        "urlName": "burston_prime_barrel"
                     }
                 }
             },
@@ -2902,11 +2902,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Nautilus Prime Blueprint",
+                    "name": "Nautilus Prime Carapace",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c60c9066bbb2aedca695a9",
-                        "urlName": "nautilus_prime_blueprint"
+                        "id": "66c60c9066bbb2aedca695ab",
+                        "urlName": "nautilus_prime_carapace"
                     }
                 }
             },
@@ -2914,11 +2914,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Burston Prime Blueprint",
+                    "name": "Burston Prime Stock",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "54a73e65e779893a797fff3a",
-                        "urlName": "burston_prime_blueprint"
+                        "id": "54a73e65e779893a797fff3c",
+                        "urlName": "burston_prime_stock"
                     }
                 }
             },
@@ -10508,6 +10508,18 @@
                 "rarity": "Rare",
                 "chance": 2,
                 "item": {
+                    "name": "Nautilus Prime Cerebrum",
+                    "uniqueName": "",
+                    "warframeMarket": {
+                        "id": "66c60c9066bbb2aedca695aa",
+                        "urlName": "nautilus_prime_cerebrum"
+                    }
+                }
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 11,
+                "item": {
                     "name": "Nami Skyla Prime Blade",
                     "uniqueName": "",
                     "warframeMarket": {
@@ -10520,23 +10532,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Nautilus Prime Carapace",
+                    "name": "Bronco Prime Barrel",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c60c9066bbb2aedca695ab",
-                        "urlName": "nautilus_prime_carapace"
-                    }
-                }
-            },
-            {
-                "rarity": "Uncommon",
-                "chance": 11,
-                "item": {
-                    "name": "Ballistica Prime Upper Limb",
-                    "uniqueName": "",
-                    "warframeMarket": {
-                        "id": "59a5cd4d5cd9938cfede7043",
-                        "urlName": "ballistica_prime_upper_limb"
+                        "id": "54a73e65e779893a797fff36",
+                        "urlName": "bronco_prime_barrel"
                     }
                 }
             },
@@ -35589,6 +35589,18 @@
                 "rarity": "Rare",
                 "chance": 2,
                 "item": {
+                    "name": "Sevagoth Prime Chassis Blueprint",
+                    "uniqueName": "",
+                    "warframeMarket": {
+                        "id": "66c6080366bbb2aedca6957e",
+                        "urlName": "sevagoth_prime_chassis_blueprint"
+                    }
+                }
+            },
+            {
+                "rarity": "Uncommon",
+                "chance": 11,
+                "item": {
                     "name": "Sevagoth Prime Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
@@ -35601,23 +35613,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Hydroid Prime Blueprint",
+                    "name": "Epitaph Prime Barrel",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "59a48b625cd9938cfede7038",
-                        "urlName": "hydroid_prime_blueprint"
-                    }
-                }
-            },
-            {
-                "rarity": "Uncommon",
-                "chance": 11,
-                "item": {
-                    "name": "Bronco Prime Barrel",
-                    "uniqueName": "",
-                    "warframeMarket": {
-                        "id": "54a73e65e779893a797fff36",
-                        "urlName": "bronco_prime_barrel"
+                        "id": "66c60c2766bbb2aedca695a5",
+                        "urlName": "epitaph_prime_barrel"
                     }
                 }
             },
@@ -35625,11 +35625,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Ballistica Prime Receiver",
+                    "name": "Ballistica Prime Lower Limb",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "59a5cd4d5cd9938cfede7046",
-                        "urlName": "ballistica_prime_receiver"
+                        "id": "59a5cd4d5cd9938cfede7044",
+                        "urlName": "ballistica_prime_lower_limb"
                     }
                 }
             },
@@ -35637,11 +35637,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Burston Prime Receiver",
+                    "name": "Bronco Prime Receiver",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "54a73e65e779893a797fff3b",
-                        "urlName": "burston_prime_receiver"
+                        "id": "54a73e65e779893a797fff38",
+                        "urlName": "bronco_prime_receiver"
                     }
                 }
             },
@@ -46167,11 +46167,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Ballistica Prime Lower Limb",
+                    "name": "Nautilus Prime Systems",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "59a5cd4d5cd9938cfede7044",
-                        "urlName": "ballistica_prime_lower_limb"
+                        "id": "66c60c9166bbb2aedca695ac",
+                        "urlName": "nautilus_prime_systems"
                     }
                 }
             },
@@ -46179,11 +46179,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Hydroid Prime Neuroptics Blueprint",
+                    "name": "Hydroid Prime Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "59a48b625cd9938cfede7039",
-                        "urlName": "hydroid_prime_neuroptics_blueprint"
+                        "id": "59a48b625cd9938cfede7038",
+                        "urlName": "hydroid_prime_blueprint"
                     }
                 }
             },
@@ -46203,11 +46203,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Bronco Prime Receiver",
+                    "name": "Nami Skyla Prime Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "54a73e65e779893a797fff38",
-                        "urlName": "bronco_prime_receiver"
+                        "id": "59a5c2565cd9938cfede703f",
+                        "urlName": "nami_skyla_prime_blueprint"
                     }
                 }
             },
@@ -72578,11 +72578,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Sevagoth Prime Chassis Blueprint",
+                    "name": "Ballistica Prime String",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c6080366bbb2aedca6957e",
-                        "urlName": "sevagoth_prime_chassis_blueprint"
+                        "id": "59a5cd4d5cd9938cfede7045",
+                        "urlName": "ballistica_prime_string"
                     }
                 }
             },
@@ -72590,11 +72590,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Nautilus Prime Systems",
+                    "name": "Ballistica Prime Upper Limb",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c60c9166bbb2aedca695ac",
-                        "urlName": "nautilus_prime_systems"
+                        "id": "59a5cd4d5cd9938cfede7043",
+                        "urlName": "ballistica_prime_upper_limb"
                     }
                 }
             },
@@ -72602,11 +72602,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Burston Prime Stock",
+                    "name": "Epitaph Prime Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "54a73e65e779893a797fff3c",
-                        "urlName": "burston_prime_stock"
+                        "id": "66c60c2766bbb2aedca695a4",
+                        "urlName": "epitaph_prime_blueprint"
                     }
                 }
             },
@@ -72614,11 +72614,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Nami Skyla Prime Handle",
+                    "name": "Burston Prime Receiver",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "59a5cd4d5cd9938cfede7042",
-                        "urlName": "nami_skyla_prime_handle"
+                        "id": "54a73e65e779893a797fff3b",
+                        "urlName": "burston_prime_receiver"
                     }
                 }
             },
@@ -75972,11 +75972,11 @@
                 "rarity": "Rare",
                 "chance": 2,
                 "item": {
-                    "name": "Nautilus Prime Cerebrum",
+                    "name": "Nautilus Prime Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c60c9066bbb2aedca695aa",
-                        "urlName": "nautilus_prime_cerebrum"
+                        "id": "66c60c9066bbb2aedca695a9",
+                        "urlName": "nautilus_prime_blueprint"
                     }
                 }
             },
@@ -75984,11 +75984,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Nami Skyla Prime Blueprint",
+                    "name": "Hydroid Prime Neuroptics Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "59a5c2565cd9938cfede703f",
-                        "urlName": "nami_skyla_prime_blueprint"
+                        "id": "59a48b625cd9938cfede7039",
+                        "urlName": "hydroid_prime_neuroptics_blueprint"
                     }
                 }
             },
@@ -75996,11 +75996,11 @@
                 "rarity": "Uncommon",
                 "chance": 11,
                 "item": {
-                    "name": "Burston Prime Barrel",
+                    "name": "Ballistica Prime Receiver",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "54a73e65e779893a797fff39",
-                        "urlName": "burston_prime_barrel"
+                        "id": "59a5cd4d5cd9938cfede7046",
+                        "urlName": "ballistica_prime_receiver"
                     }
                 }
             },
@@ -76008,11 +76008,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Epitaph Prime Blueprint",
+                    "name": "Sevagoth Prime Systems Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "66c60c2766bbb2aedca695a4",
-                        "urlName": "epitaph_prime_blueprint"
+                        "id": "66c6080366bbb2aedca6957f",
+                        "urlName": "sevagoth_prime_systems_blueprint"
                     }
                 }
             },
@@ -76020,11 +76020,11 @@
                 "rarity": "Uncommon",
                 "chance": 25.33,
                 "item": {
-                    "name": "Ballistica Prime String",
+                    "name": "Burston Prime Blueprint",
                     "uniqueName": "",
                     "warframeMarket": {
-                        "id": "59a5cd4d5cd9938cfede7045",
-                        "urlName": "ballistica_prime_string"
+                        "id": "54a73e65e779893a797fff3a",
+                        "urlName": "burston_prime_blueprint"
                     }
                 }
             },
